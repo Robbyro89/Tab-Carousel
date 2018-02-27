@@ -1,0 +1,53 @@
+<header class="container-fluid">
+  <div class="row offset-1">
+  	<h1>Warung Bali Asli</h1>
+  </div>
+  <div class="row2 offset-3">
+    <h2>Aneka Makanan</h2>
+  </div>
+</header>
+
+<body>
+  <div class="container-fluid">
+  	<ul class="tabs">
+  		<li class="tab-link current" data-tab="tab-1">Presentation</li>
+  		<li class="tab-link" data-tab="tab-2">Menu</li>
+  		<li class="tab-link" data-tab="tab-3">Au choix</li>
+  	</ul>
+  	<div id="tab-1" class="tab-content current">
+      <b>Warung Bali Asli, est un restaurant traditionnel de l'art culinaire Balinais mais egalement du reste de l'Indonesie.<br>
+      Nourriture, a base de porc, de poulet, de legumes en tout genre mais surtout avec toutes sortes d'epices.</b>
+  	</div>
+  	<div id="tab-2" class="tab-content">
+      <div class="row" id="rphoto">
+    		<div class="col-sm-3">
+          <p><b>Nasi Campur</b></p>
+          <%= image_tag ("nasi-campur.jpeg"), id: "photo" %>
+        </div>
+        <div class="col-sm-3">
+          <p><b>Gado Gado</b></p>
+          <%= image_tag ("gado-gado.jpeg"), id: "photo" %>
+        </div>
+        <div class="col-sm-3">
+          <p><b>Baby Guling</b></p>
+          <%= image_tag ("Baby-Guling.jpeg"), id: "photo" %>
+        </div>
+        <div class="col-sm-3">
+          <p><b>Nasi Goreng</b></p>
+          <%= image_tag ("Nasi-Goreng.jpeg"), id: "photo" %>
+        </div>
+      </div>
+  	</div>
+  	<div id="tab-3" class="tab-content">
+  		<b></b>
+  	</div>
+  </div>
+</body>
+
+<footer class="footer nav navbar-fixed-bottom">
+  <div class="container-fluid">
+    <div class="offset-9">
+      <p style="color: white"><b>© 2015 Warung Perancis, Pt.</b></p>
+    </div>
+  </div>
+</footer>
