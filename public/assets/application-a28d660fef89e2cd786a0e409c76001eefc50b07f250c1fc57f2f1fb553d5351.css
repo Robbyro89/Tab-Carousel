@@ -1,0 +1,126 @@
+/* line 5, /home/fabien/Documents/COURS-THP/Travaux-Pratiques/Semaine_8/2_Mardi/Tab-Carousel/app/assets/stylesheets/home.scss */
+header {
+  width: 100%;
+  height: 250px;
+  padding-top: 100px;
+  background: url("/assets/background2-bad61cf1c7d647cb887ff9774e02333f37251597fb479dfac8863c278403c7e3.jpg");
+  background-repeat: no-repeat;
+  background-size: 1440px 250px;
+  background-position: right;
+}
+
+/* line 15, /home/fabien/Documents/COURS-THP/Travaux-Pratiques/Semaine_8/2_Mardi/Tab-Carousel/app/assets/stylesheets/home.scss */
+body {
+  background-image: url("/assets/Culinaire-2068bdfd6aee6524c8ffd6f01005c8b851c7a7afd019272564c0f976a44d3c7b.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Trebuchet MS', serif;
+  line-height: 1.6;
+}
+
+/* line 23, /home/fabien/Documents/COURS-THP/Travaux-Pratiques/Semaine_8/2_Mardi/Tab-Carousel/app/assets/stylesheets/home.scss */
+h1, h2 {
+  color: purple;
+  font-weight: 800;
+}
+
+/* line 31, /home/fabien/Documents/COURS-THP/Travaux-Pratiques/Semaine_8/2_Mardi/Tab-Carousel/app/assets/stylesheets/home.scss */
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* line 36, /home/fabien/Documents/COURS-THP/Travaux-Pratiques/Semaine_8/2_Mardi/Tab-Carousel/app/assets/stylesheets/home.scss */
+ul.tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+/* line 42, /home/fabien/Documents/COURS-THP/Travaux-Pratiques/Semaine_8/2_Mardi/Tab-Carousel/app/assets/stylesheets/home.scss */
+ul.tabs li {
+  font-weight: bold;
+  background: none;
+  color: black;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* line 51, /home/fabien/Documents/COURS-THP/Travaux-Pratiques/Semaine_8/2_Mardi/Tab-Carousel/app/assets/stylesheets/home.scss */
+ul.tabs li.current {
+  background: #E8E8E8;
+  border: 1px solid purple;
+  border-radius: 0 0 8px 8px;
+  border-top: none;
+  color: purple;
+}
+
+/* line 59, /home/fabien/Documents/COURS-THP/Travaux-Pratiques/Semaine_8/2_Mardi/Tab-Carousel/app/assets/stylesheets/home.scss */
+.tab-content {
+  display: none;
+  background-color: #E8E8E8;
+  border: 2px solid purple;
+  border-radius: 8px;
+  color: purple;
+  padding: 15px;
+}
+
+/* line 68, /home/fabien/Documents/COURS-THP/Travaux-Pratiques/Semaine_8/2_Mardi/Tab-Carousel/app/assets/stylesheets/home.scss */
+.tab-content.current {
+  display: inherit;
+}
+
+/* line 72, /home/fabien/Documents/COURS-THP/Travaux-Pratiques/Semaine_8/2_Mardi/Tab-Carousel/app/assets/stylesheets/home.scss */
+#tab-1, #tab-3 {
+  width: 800px;
+}
+
+/* line 76, /home/fabien/Documents/COURS-THP/Travaux-Pratiques/Semaine_8/2_Mardi/Tab-Carousel/app/assets/stylesheets/home.scss */
+#tab-2 {
+  background-image: url("/assets/culinaire-1effdac891001e3f97802ad274d4a256441aae794ce6d672d9115d61cdca3d2a.jpg");
+  background-repeat: round;
+}
+
+/* line 81, /home/fabien/Documents/COURS-THP/Travaux-Pratiques/Semaine_8/2_Mardi/Tab-Carousel/app/assets/stylesheets/home.scss */
+#rphoto {
+  text-align: center;
+  padding: 10px;
+}
+
+/* line 86, /home/fabien/Documents/COURS-THP/Travaux-Pratiques/Semaine_8/2_Mardi/Tab-Carousel/app/assets/stylesheets/home.scss */
+#photo {
+  width: 250px;
+  height: 150px;
+  border: 2px solid purple;
+  border-radius: 8px;
+}
+
+/* line 93, /home/fabien/Documents/COURS-THP/Travaux-Pratiques/Semaine_8/2_Mardi/Tab-Carousel/app/assets/stylesheets/home.scss */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: auto;
+  padding-top: 15px;
+  background-image: url("/assets/Mosaique1-67dd5b007671f07209d0230116e22389c542110d4043a9a184cd28e549a2f1d0.jpg");
+  background-repeat: no-repeat;
+  background-size: 1440px auto;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
