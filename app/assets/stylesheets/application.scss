@@ -13,6 +13,8 @@
 
 @import "bootstrap";
 
+// Header:
+
  header {
    width: 100%;
    height: 600px;
@@ -22,6 +24,8 @@
    background-size: 1440px 600px;
    background-position: right;
  }
+
+// Tabulation:
 
  body {
    width: 100%;
@@ -127,100 +131,50 @@ h2 {
    border-radius: 8px;
  }
 
- footer {
-   position: absolute;
-   bottom: 0;
-   width: 100%;
-   height: auto;
-   padding-top: 15px;
-   background-color: purple;
- }
-
-// Carousel
+// Carousel:
 
 section {
-  width: 100%;
-  height: 600px;
-  background-image: url(asset-path('background3.jpeg'));
+  background-image: url(asset-path('ocean.jpeg'));
   background-repeat: no-repeat;
   background-size: 1440px 600px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  width: 100%;
+  height: 600px;
 }
 
-#carousel {
-	width:255px;
-	height:290px;
-	margin:0 auto;
+h3 {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  font-weight: 900;
+  color: purple
 }
 
-#slides {
-	overflow:hidden;
-	/* fix ie overflow issue */
-	position:relative;
-	width:250px;
-	height:250px;
-	border:1px solid #ccc;
+#myCarousel {
+  width: 800px;
+  height: 400px;
 }
 
-/* remove the list styles, width : item width * total items */
-#slides ul {
-	position:relative;
-	left:0;
-	top:0;
-	list-style:none;
-	margin:0;
-	padding:0;
-	width:750px;
+#photoC {
+  width: 800px;
+  height: 400px;
 }
 
-/* width of the item, in this case I put 250x250x gif */
-#slides li {
-	width:250px;
-	height:250px;
-	float:left;
+#left, #right {
+  background-color: purple;
+  color: white;
 }
 
-#slides li img {
-	padding:5px;
-}
+// Footer:
 
-/* Styling for prev and next buttons */
-#buttons {
-	padding:0 0 5px 0;
-	float:right;
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding-top: 15px;
+  background-color: purple;
 }
-
-#prev {
-	display:block;
-	width:31px;
-	height:32px;
-	text-indent:-999em;
-	float:left;
-	outline:0;
-}
-
-#next {
-  display:block;
-	width:31px;
-	height:32px;
-	text-indent:-999em;
-	float:right;
-	outline:0;
-}
-
-a#prev {
-	background:url(arrowleft.png) 0 -31px no-repeat;
-}
-
-a#prev:hover {
-	background:url(arrowleft.png) 0 0 no-repeat;
-}
-
-a#next {
-	background:url(arrowright.png) -32px -31px no-repeat;
-}
-
-a#next:hover {
-	background:url(arrowright.png) -32px 0 no-repeat;
-}
-
-.clear {clear:both}
