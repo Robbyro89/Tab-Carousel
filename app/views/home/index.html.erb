@@ -1,39 +1,48 @@
 <header class="container-fluid">
-  <div class="row offset-1">
+  <div class="row">
   	<h1>Warung Bali Asli</h1>
   </div>
-  <div class="row2 offset-3">
+  <div class="row2 offset-2">
     <h2>Aneka Makanan</h2>
   </div>
 </header>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid" id="tab">
   	<ul class="tabs">
   		<li class="tab-link current" data-tab="tab-1">Presentation</li>
   		<li class="tab-link" data-tab="tab-2">Menu</li>
   		<li class="tab-link" data-tab="tab-3">Au choix</li>
   	</ul>
-  	<div id="tab-1" class="tab-content current">
+  	<div class="tab-content current" id="tab-1">
       <b>Warung Bali Asli, est un restaurant traditionnel de l'art culinaire Balinais mais egalement du reste de l'Indonesie.<br>
-      Nourriture, a base de porc, de poulet, de legumes en tout genre mais surtout avec toutes sortes d'epices.</b>
+      Nourriture, a base de porc, de poulet, de legumes en tout genre mais surtout avec toutes sortes d'epices.
+      Tous les aliments sont issues de l'agriculture biologique comme ils faisaient autrefois. Les animaux sont eleves
+      en plein air et mangent de la nourriture adaptee a leur besoin. Ces plats sont naturellement tres epices grace aux "cabe"
+      ou encore "lombok", les varietes de piments les plus connus en Indonesie. Toutefois, il est possible de demander son plat avec
+      plus au moins de piments voire pas de piments du tout.</b>
   	</div>
   	<div id="tab-2" class="tab-content">
       <div class="row" id="rphoto">
     		<div class="col-sm-3">
           <p><b>Nasi Campur</b></p>
+          <%= image_tag ('nasicampur.jpeg'), id: "photo" %>
+          <div class="price"><b>Harga: Rp 15.000</b></div>
         </div>
         <div class="col-sm-3">
           <p><b>Gado Gado</b></p>
           <%= image_tag ('gadogado.jpeg'), id: "photo" %>
+          <div class="price"><b>Harga: Rp 18.000</b></div>
         </div>
         <div class="col-sm-3">
           <p><b>Baby Guling</b></p>
           <%= image_tag ('babyguling.jpeg'), id: "photo" %>
+          <div class="price"><b>Harga: Rp 25.000</b></div>
         </div>
         <div class="col-sm-3">
           <p><b>Nasi Goreng</b></p>
           <%= image_tag ('nasigoreng.jpeg'), id: "photo" %>
+          <div class="price"><b>Harga: Rp 15.000</b></div>
         </div>
       </div>
   	</div>
@@ -43,7 +52,30 @@
   </div>
 </body>
 
-<footer class="footer nav navbar-fixed-bottom">
+<section>
+  <div id="carousel">
+  	<div id="buttons">
+  		<a href="<" id="prev">prev</a>
+  		<a href=">" id="next">next</a>
+  		<div class="clear"></div>
+  	</div>
+
+  	<div class="clear"></div>
+
+  	<div id="slides">
+  		<ul>
+  			<li><%=image_tag("balidance.jpeg", width:"240", height:"240", alt:"Slide 1")%></li>
+  			<li><%=image_tag("coconutdrink.jpeg", width:"240", height:"240", alt:"Slide 2")%></li>
+  			<li><%=image_tag("gunungagung.jpeg", width:"240", height:"240", alt:"Slide 3")%></li>
+        <li><%=image_tag("sanurbeach.jpeg", width:"240", height:"240", alt:"Slide 4")%></li>
+        <li><%=image_tag("tirtaempul.jpeg", width:"240", height:"240", alt:"Slide 5")%></li>
+  		</ul>
+  		<div class="clear"></div>
+  	</div>
+  </div>
+</section>
+
+<footer class="nav navbar-fixed-bottom">
   <div class="container-fluid">
     <div class="offset-9">
       <p style="color: white"><b>© 2015 Warung Perancis, Pt.</b></p>
