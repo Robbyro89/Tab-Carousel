@@ -12,7 +12,7 @@
   	<ul class="tabs">
   		<li class="tab-link current" data-tab="tab-1">Presentation</li>
   		<li class="tab-link" data-tab="tab-2">Menu</li>
-  		<li class="tab-link" data-tab="tab-3">Au choix</li>
+  		<li class="tab-link" data-tab="tab-3">Tour Guide</li>
   	</ul>
   	<div class="tab-content current" id="tab-1">
       <b>Warung Bali Asli, est un restaurant traditionnel de l'art culinaire Balinais mais egalement du reste de l'Indonesie.<br>
@@ -45,12 +45,36 @@
           <div class="price"><b>Harga: Rp 15.000</b></div>
         </div>
       </div>
+      <div class="row" id="rphoto">
+    		<div class="col-sm-3">
+          <p><b>Mie Goreng</b></p>
+          <%= image_tag ('miegoreng.jpeg'), id: "photo" %>
+          <div class="price"><b>Harga: Rp 15.000</b></div>
+        </div>
+        <div class="col-sm-3">
+          <p><b>Pork Ribs</b></p>
+          <%= image_tag ('porkribs.jpeg'), id: "photo" %>
+          <div class="price"><b>Harga: Rp 35.000</b></div>
+        </div>
+        <div class="col-sm-3">
+          <p><b>Ayam Betutu</b></p>
+          <%= image_tag ('ayambetutu.jpeg'), id: "photo" %>
+          <div class="price"><b>Harga: Rp 25.000</b></div>
+        </div>
+        <div class="col-sm-3">
+          <p><b>Sapi Rendang</b></p>
+          <%= image_tag ('sapirendang.jpeg'), id: "photo" %>
+          <div class="price"><b>Harga: Rp 30.000</b></div>
+        </div>
+      </div>
   	</div>
   	<div id="tab-3" class="tab-content">
-  		<b>Bali ne se resume pas seulement par sa cuisine, mais egalement par sa culture et la religion Hindouiste.
-      Les paysagey sont tout aussi magnifique, que ce soit au lever du soleil, pendant la journee ou au coucher...
+  		<p><b>Bali ne se resume pas seulement par sa cuisine, mais egalement par sa culture et la religion Hindouiste.
+      Les paysage y sont tout aussi magnifique, que ce soit au lever du soleil, pendant la journee ou au coucher...
       Notre restaurant travaille en colaboration avec des guides locaux qui connaissent parfaitement l'ile sous
-      tous les aspects. Vous pouvez voir dans la section suivante quelques une de nos merveilles.</b>
+      tous les aspects. Vous pouvez voir dans la section suivante quelques une de nos merveilles.<br><br>
+      Pour plus d'information, cliquez sur le gros boutton.</b></p><br>
+      <button type="button" class="btn btn-lg">Book Now</button>
   	</div>
   </div>
 </body>
